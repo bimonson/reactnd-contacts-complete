@@ -2,7 +2,11 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 class ListContacts extends Component {
+<<<<<<< HEAD
     static propTypes = {
+=======
+    propTypes = {
+>>>>>>> bc89d354039570833ce5752db41af7463853b208
         contacts: PropTypes.array.isRequired,
         onDeleteContact: PropTypes.func.isRequired
     }
