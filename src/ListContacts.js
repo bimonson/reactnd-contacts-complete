@@ -37,7 +37,7 @@ class ListContacts extends Component {
 
         return (
             <div className='list-contacts'>
-                <div className='list-contact-top'>
+                <div className='list-contacts-top'>
                     <input
                         className='search-contacts'
                         type='text'
@@ -45,6 +45,11 @@ class ListContacts extends Component {
                         value={query}
                         onChange={(event) => this.updateQuery(event.target.value)}
                     />
+                    <a
+                        href='#create'
+                        onClick={this.props.onNavigate}
+                        className='add-contact'
+                    >Add Contact</a>
                 </div>
 
                 {showingContacts.length !== contacts.length && (
